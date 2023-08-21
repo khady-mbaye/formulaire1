@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> formulaire 1</title>
+        <meta name="utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<meta name="viewport" content="width=device-width, initial-scal=0.1">
+		
+        <style>
+			.partie{
+				width: 75%;
+				height: 900px;
+				margin: 0 auto;
+				background-image: url('tache03-a.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+			.div1{
+				width: 30%;
+				height: 500px;
+				border: 10px solid white;
+				background-image: url('tache03-a.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			.div2{
+				width: 30%;
+				height: 500px;
+				border: 10px solid white;
+				background-color: white;
+			}
+			h1{
+				text-align: center;
+				margin-top: 20px;
+				font-size: 25px;
+				text-transform: uppercase;
+			}
+			img{
+				width: 16px;
+			}
+			input{
+				width: 90%;
+				margin-left: 5%;
+				border: none;
+				border-bottom: 1px solid black;
+				padding-top: 30px;
+				font-weight: 500;
+				color: black;
+				outline: none;
+
+			}
+			input::placeholder{
+				color: black;
+				margin: 0px;
+			}
+			.line1 , .line2{
+				width: 40%;
+				border-bottom: 1px solid black;
+				
+			}
+			i{
+				margin-top: 18px;
+			}
+			.logo-r , line{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+
+			}
+			.logo{
+				border-bottom: 1px solid black;
+			}
+			#submit{
+				width: 30%;
+				outline: none;
+				margin: 0 auto;
+				margin-top: 50px;
+				padding: 15px;
+				position: relative;
+				left: 30%;
+				border: 1px solid black;
+				background-color: black;
+				color: white; 
+}
+@media screen and (max-width:600px) {
+            .partie{
+                width: 100%;
+                height: 700px;
+            }
+            .div1{
+                display: none;
+            }
+            .div2{
+                width: 85%;
+				margin: 0 auto;
+                height: 500px;
+            }
+            
+           }
+        </style>
+    </head>
+    <body>
+        <div class="partie">
+            <div class="div1">
+
+            </div>
+            <div class="div2">
+                <h1>registration form</h1>
+			<div class="inline"> 
+				<input type="text" class="line1" placeholder="first name">
+				<input type="text"  class="line2" placeholder="last name">
+			</div>
+			<div class="logo-r">
+				<input type="text"placeholder="Usename">
+				<img src="username.jpg" alt="logo">
+				
+			</div>
+			<div class="logo-r">
+				<input type="text"placeholder="Email adress">
+				<img src="email.jpg" alt="logo">
+			</div>
+			<div class="logo-r">
+				<input type="text"placeholder="Gender">
+				<i class="fa-solid fa-caret-down" style="color: black;"></i>
+			</div>
+			<div class="logo-r">
+				<input type="password"placeholder="password">
+				<img src="password.png" alt="logo">
+			</div>
+			<div class="logo-r">
+				<input type="password"placeholder="Confirm password">
+				<img src="password.png" alt="logo">
+			</div>
+			<input type="submit"value="Register" id="submit">
+            </div>
+        </div>
+    </body>
+</html>
